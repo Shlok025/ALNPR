@@ -88,9 +88,9 @@ Image 1:-
 
 ## Dataset Link
 
-Link :- [Dataset_Link](https://www.kaggle.com/datasets/aslanahmedov/number-plate-detection).
+Link :- [Kagle_Dataset_Link](https://www.kaggle.com/datasets/aslanahmedov/number-plate-detection).
 
 + Note:-  
-   + 1.Annotations(labels) in the dataset are in ".xml" format. 
-   + 2.Using python script i have converted it into Yolo format and stored in ".txt" documents.
-   + 3.Lastly, I have split them in 80:20 % ratio into train and val folder inside the train_data folder 
+   + Annotations(labels) in the dataset are in ".xml" format. 
+   + Using python script i have converted it into Yolo format and stored in ".txt" documents.
+   + Lastly, I have split them in 80:20 % ratio into train and val folder inside the train_data folder 
