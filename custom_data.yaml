@@ -1,0 +1,6 @@
+train: /content/yolov5/train_data/images/train
+val: /content/yolov5/train_data/images/val
+nc: 1
+names: [
+    'license_plate'
+]
