@@ -1,12 +1,13 @@
-# YOLOv5 Training Pipeline
+# ALNPR using Yolov5 model
 
 ## Description
-This documentation covers the training process for YOLOv5 models, including setup, training, monitoring, and inference.
+This documentation covers the training process for YOLOv5 models for automatic number plate recognition, including setup, training, monitoring, and inference.
 
 ## Dependencies
 - Python 3.x
 - PyTorch
 - YOLOv5 requirements
+
 
 ## Training Process
 
@@ -48,25 +49,14 @@ Training outputs:
 - Best weights saved as `best.pt`
 - Last weights saved as `last.pt`
 
-### 3. Monitor Training
-- Training metrics logged in real-time
-- View results in Tensorboard:
-  ```bash
-  tensorboard --logdir runs/train
-  ```
-- Metrics tracked:
-  - mAP (mean Average Precision)
-  - Precision
-  - Recall
-  - Loss values (box, objectness, classification)
 
-### 4. Validation
+### 3. Validation
 Validate your model:
 ```bash
 python val.py --weights runs/train/exp/weights/best.pt --data custom_data.yaml --img 640
 ```
 
-### 5. Inference
+### 4. Inference
 Run detection on new images:
 ```bash
 python detect.py --weights runs/train/exp/weights/best.pt --source path/to/images --img 640 --conf 0.25
@@ -86,12 +76,11 @@ Export your trained model:
 python export.py --weights runs/train/exp/weights/best.pt --include torchscript onnx
 ```
 
-## Notes
-- Training progress is automatically logged
-- Best model weights are saved based on validation performance
-- Use `--resume` flag to continue training from a checkpoint
-- Adjust batch size based on available GPU memory
-- Monitor GPU memory usage during training
+## Result
 
-## License
-This project uses YOLOv5 which is licensed under the GPL-3.0 license.
+Video 1:- 
+![b087d9ff-d1b8-47ce-8e58-fcd0a820fc20 (1)](https://github.com/user-attachments/assets/af5c5b77-6341-4d29-aefe-a415ca3d3a29)
+
+Image 1:-
+
+![TEST](https://github.com/user-attachments/assets/f91f1e80-e4e8-425b-87c8-7aec561dba44)
